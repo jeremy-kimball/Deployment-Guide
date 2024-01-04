@@ -88,4 +88,14 @@ After this, hit save.
 ![image](https://github.com/jeremy-kimball/Deployment-Guide/assets/130601077/ea9be6be-8a44-4825-8e47-05038d978e6e)
 <br>
 5. You are finished and can now write your queries in here!
-
+# Common Issues
+1. CSS not showing
+Make this adjustment in your program.cs file, on your builder.
+```
+var builder = WebApplication.CreateBuilder(new WebApplicationOptions()
+{
+    Args = args,
+    ContentRootPath = "/app/out",
+    WebRootPath = "wwwroot",
+});
+```
