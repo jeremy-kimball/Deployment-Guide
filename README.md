@@ -86,10 +86,10 @@ After this, hit save.
 ![image](https://github.com/jeremy-kimball/Deployment-Guide/assets/130601077/b6b3abe4-5c52-44cd-8021-e7043458d0c8)
 4. This is the connection you are looking for <br>
 ![image](https://github.com/jeremy-kimball/Deployment-Guide/assets/130601077/ea9be6be-8a44-4825-8e47-05038d978e6e)
-<br>
+<br></br>
 5. You are finished and can now write your queries in here!
 # Common Issues
-1. CSS not showing
+1. CSS not showing <br/>
 Make this adjustment in your program.cs file, on your builder.
 ```
 var builder = WebApplication.CreateBuilder(new WebApplicationOptions()
