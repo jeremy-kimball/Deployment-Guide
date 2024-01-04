@@ -62,11 +62,11 @@ builder.Services.AddDbContext<MYDBCONTEXT>(
                     );
 ```
 4. Below the line `var app = builder.Build();` in program.cs
-Add the following block of code, this is the programmatic version of `update-database` and so ensures our remote DB has our migrations.
+Add the following block of code, this is the programmatic version of `update-database` and so ensures our remote DB has our migrations. Again changing MYDBCONTEXT to match your existing one.
 ```
 using (var scope = app.Services.CreateScope())
 {
-    var dbContext = scope.ServiceProvider.GetRequiredService<DeveloperDashboardContext>();
+    var dbContext = scope.ServiceProvider.GetRequiredService<MYDBCONTEXT>();
     // This will throw an exception if the connection fails
     dbContext.Database.Migrate();
 }
