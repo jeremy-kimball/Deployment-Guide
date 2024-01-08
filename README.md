@@ -80,7 +80,7 @@ using (var scope = app.Services.CreateScope())
 Here we will be using values from the variables tab from Railway
 - Host name/address = PGHOST
 - PORT = PGPORT
-- Username = PGUSERNAME
+- Username = PGUSER
 - Password = PGPASSWORD
 After this, hit save.
 ![image](https://github.com/jeremy-kimball/Deployment-Guide/assets/130601077/b6b3abe4-5c52-44cd-8021-e7043458d0c8)
